@@ -8,9 +8,30 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Text("Nida khokhar  email:nidakhokhar.work@gmail.com"),
-      ),
-    );
+        debugShowCheckedModeBanner: false,
+        home: Scaffold(
+            backgroundColor: Colors.lightBlueAccent,
+            appBar: AppBar(
+              backgroundColor: Colors.blueGrey,
+              title: Center(child: Text("Login Page")),
+            ),
+            body: Center(
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: 50,
+                  ),
+                  Container(width: 200, child: TextField()),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  Container(width: 200, child: TextField()),
+                  SizedBox(
+                    height: 30,
+                  ),
+                  ElevatedButton(onPressed: () {}, child: Text("Login"))
+                ],
+              ),
+            )));
   }
 }
